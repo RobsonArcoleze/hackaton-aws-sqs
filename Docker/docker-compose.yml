@@ -1,0 +1,26 @@
+services:
+  web:
+    build:
+      context: ..
+      dockerfile: Docker/Dockerfile
+    image: upload-frame-flow
+    container_name: upload-frame-flow
+    restart: always
+    ports:
+      - "80:8787"
+    networks:
+      - sql_network
+    environment:
+      - AWS_KEY=${AWS_KEY}
+      - AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID}
+      - AWS_SECRET=${AWS_SECRET}
+      - AWS_TOKEN=${AWS_TOKEN}
+      - ACCOUNT_ID=${ACCOUNT_ID}
+      - AWS_REGION="us-east-1"
+      - SNS_TOPIC=${SNS_TOPIC}
+      - SQS_QUEUE=${SQS_QUEUE}
+      - S3_BUCKET_ZIP=${S3_BUCKET_ZIP}
+      - S3_BUCKET_VIDEO=${S3_BUCKET_VIDEO}
+networks:
+  sql_network:
+    driver: bridge
