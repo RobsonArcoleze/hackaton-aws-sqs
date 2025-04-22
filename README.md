@@ -43,7 +43,7 @@ A solução será baseada em uma arquitetura escalável e distribuída, garantin
 ## 📐 Diagramas e Documentações
 
 - [**Diagrama da Arquitetura do Sistema**](https://drive.google.com/file/d/1tmwsMudqYLGj0Bk0klof8fA4hw1KPFEX/view)
-- [**Documentação da Modelagem de Dados**]https://docs.google.com/document/d/1TKvx9MnW6Q-lvNpo60jWedmaOMdGRnL5/edit)
+- [**Documentação da Modelagem de Dados**](https://docs.google.com/document/d/1TKvx9MnW6Q-lvNpo60jWedmaOMdGRnL5/edit)
 
 ## ✔️ Funcionalidades do Projeto
 
